@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ДомСервис — утепление и отделка фасадов в ПМР с гарантией</title>
+  <meta name="description" content="Утепление, реставрация и покраска фасадов, борьба с сыростью и плесенью, герметизация швов. 15+ лет опыта в ПМР. Бесплатный замер.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script>if(!matchMedia("(prefers-reduced-motion: reduce)").matches){document.documentElement.classList.add("anim")}</script>
+</head>
+<body>
+
+<div id="preloader" aria-hidden="true">
+  <div class="pre-logo"><i class="fa-solid fa-house-chimney"></i> Дом<span>Сервис</span></div>
+  <div class="pre-bar"><i id="preBar"></i></div>
+  <div class="pre-num"><span id="preNum">0</span>%</div>
+</div>
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="wrap hdr">
+    <a href="#top" class="logo" data-scroll>
+      <span class="logo-mark"><i class="fa-solid fa-house-chimney"></i></span>
+      <span>Дом<em>Сервис</em></span>
+    </a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#services" data-scroll>Услуги</a>
+      <a href="#before-after" data-scroll>До/После</a>
+      <a href="#works" data-scroll>Работы</a>
+      <a href="#calculator" data-scroll>Калькулятор</a>
+      <a href="#guarantees" data-scroll>Гарантии</a>
+      <a href="#contacts" data-scroll>Контакты</a>
+    </nav>
+    <div class="hdr-r">
+      <a href="tel:+37377700000" class="hdr-phone"><i class="fa-solid fa-phone"></i> +373  777 20 072</a>
+      <button class="btn btn-sm hide-sm" data-open-modal data-magnetic>Вызвать замерщика — бесплатно</button>
+      <button id="burger" class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div id="mmenu" class="mmenu" aria-hidden="true">
+  <a href="#services" data-scroll>Услуги</a><a href="#before-after" data-scroll>До/После</a><a href="#works" data-scroll>Работы</a>
+  <a href="#calculator" data-scroll>Калькулятор</a><a href="#guarantees" data-scroll>Гарантии</a><a href="#contacts" data-scroll>Контакты</a>
+  <button class="btn" data-open-modal>Вызвать замерщика — бесплатно</button>
+</div>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"><i class="orb o1"></i><i class="orb o2"></i></div>
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow" data-hero><span></span> Тирасполь · Бендеры · Григориополь · вся ПМР</p>
+      <h1 class="split">Профессиональное утепление и отделка фасадов <em>с гарантией</em></h1>
+      <p class="lead" data-hero>Устраним сырость, сохраним тепло и придадим вашему дому премиальный вид. 15+ лет опыта.</p>
+      <div class="pills" data-hero>
+        <span><i class="fa-solid fa-ruler-combined"></i> Бесплатный замер</span>
+        <span><i class="fa-solid fa-award"></i> 15+ лет опыта</span>
+        <span><i class="fa-solid fa-file-signature"></i> Официальная гарантия</span>
+      </div>
+      <div class="hero-cta" data-hero>
+        <a href="#calculator" class="btn btn-lg" data-scroll data-magnetic>Рассчитать стоимость <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#works" class="btn btn-line btn-lg" data-scroll data-magnetic>Наши работы</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <figure class="photo arch" data-label="Главное фото: красивый фасад дома">
+        <img src="images/hero.jpg" data-fallback="img/fasad.jpg" alt="Утеплённый и отделанный фасад дома" data-parallax>
+      </figure>
+      <div class="seal" aria-hidden="true">
+        <svg viewBox="0 0 160 160"><defs><path id="circ" d="M80,80 m-62,0 a62,62 0 1,1 124,0 a62,62 0 1,1 -124,0"/></defs>
+          <text><textPath href="#circ">15+ ЛЕТ ОПЫТА • ГАРАНТИЯ ПО ДОГОВОРУ • </textPath></text></svg>
+        <i class="fa-solid fa-house-chimney"></i>
+      </div>
+      <div class="float-card fc1"><i class="fa-solid fa-ruler-combined"></i><div><b>Замер — 0 руб.</b><small>Выезд специалиста</small></div></div>
+      <div class="float-card fc2"><i class="fa-solid fa-shield-halved"></i><div><b>Гарантия</b><small>по договору</small></div></div>
+    </div>
+  </div>
+  <a href="#services" class="scroll-hint" data-scroll aria-label="Прокрутить вниз"><i class="fa-solid fa-chevron-down"></i></a>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="mq-track">
+    <span>Утепление фасадов</span><i>✦</i><span>Реставрация</span><i>✦</i><span>Покраска</span><i>✦</i><span>Гидроизоляция</span><i>✦</i><span>Декоративная штукатурка</span><i>✦</i><span>Короед</span><i>✦</i><span>Герметизация швов</span><i>✦</i>
+    <span>Утепление фасадов</span><i>✦</i><span>Реставрация</span><i>✦</i><span>Покраска</span><i>✦</i><span>Гидроизоляция</span><i>✦</i><span>Декоративная штукатурка</span><i>✦</i><span>Короед</span><i>✦</i><span>Герметизация швов</span><i>✦</i>
+  </div>
+</div>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="wrap stats-grid">
+    <div data-reveal><b><span data-count="15">0</span>+</b><small>лет работаем в ПМР</small></div>
+    <div data-reveal><b><span data-count="0">0</span> ₽</b><small>замер и консультация</small></div>
+    <div data-reveal><b><span data-count="100">0</span>%</b><small>работ — по договору</small></div>
+    <div data-reveal><b><span data-count="0">0</span></b><small>скрытых наценок</small></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="sec">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <p class="eyebrow"><span></span> Услуги</p>
+      <h2 class="h2">Что мы делаем <em>с вашим фасадом</em></h2>
+      <p class="sub">Четыре направления, которые закрывают всё: от тепла в доме до внешнего вида.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc" data-reveal>
+        <figure class="photo svc-img" data-label="Утепление фасада"><img src="images/s-insulation.jpg" data-fallback="https://images.unsplash.com/photo-1690122254245-f85d6e738705?auto=format&fit=crop&w=1600&q=80" alt="Утепление фасада" loading="lazy"></figure>
+        <div class="svc-body"><span class="svc-n">01</span><h3>Утепление фасадов</h3>
+          <ul><li>Пенопласт (ППС)</li><li>Минеральная вата</li><li>Армирование и грунтовка</li><li>Финишная штукатурка</li></ul>
+          <div class="svc-foot"><div><small>от</small><b>380 руб./м²</b></div><button class="btn btn-sm" data-open-modal data-service="Утепление фасадов">Заказать</button></div></div>
+      </article>
+      <article class="svc" data-reveal>
+        <figure class="photo svc-img" data-label="Сырость и плесень"><img src="images/s-damp.jpg" data-fallback="https://images.unsplash.com/photo-1740235088915-6f6c7d75c0be?auto=format&fit=crop&w=1600&q=80" style="object-position:20% 85%" alt="Устранение сырости и плесени" loading="lazy"></figure>
+        <div class="svc-body"><span class="svc-n">02</span><h3>Борьба с сыростью и плесенью</h3>
+          <ul><li>Устранение сырости и грибка</li><li>Антисептическая обработка</li><li>Гидроизоляция стен</li><li>Осушение и защита</li></ul>
+          <div class="svc-foot"><div><small>от</small><b>260 руб./м²</b></div><button class="btn btn-sm" data-open-modal data-service="Борьба с сыростью и плесенью">Заказать</button></div></div>
+      </article>
+      <article class="svc" data-reveal>
+        <figure class="photo svc-img" data-label="Декоративная отделка"><img src="images/s-decor.jpg" data-fallback="https://images.pexels.com/photos/18239248/pexels-photo-18239248.jpeg?auto=compress&cs=tinysrgb&w=1600" style="object-position:50% 50%" alt="Декоративная штукатурка короед" loading="lazy"></figure>
+        <div class="svc-body"><span class="svc-n">03</span><h3>Декоративная отделка</h3>
+          <ul><li>Декоративная штукатурка</li><li>Фактура «короед»</li><li>Реставрация и покраска</li><li>Подбор цвета под дом</li></ul>
+          <div class="svc-foot"><div><small>от</small><b>300 руб./м²</b></div><button class="btn btn-sm" data-open-modal data-service="Декоративная отделка">Заказать</button></div></div>
+      </article>
+      <article class="svc" data-reveal>
+        <figure class="photo svc-img" data-label="Герметизация швов"><img src="images/s-seams.jpg" data-fallback="https://images.pexels.com/photos/18169132/pexels-photo-18169132.jpeg?auto=compress&cs=tinysrgb&w=1600" style="object-position:50% 50%" alt="Герметизация межпанельных швов" loading="lazy"></figure>
+        <div class="svc-body"><span class="svc-n">04</span><h3>Герметизация межпанельных швов</h3>
+          <ul><li>Удаление старого уплотнителя</li><li>Утепление шва</li><li>Герметик для наружных работ</li><li>Работа на высоте с лесами</li></ul>
+          <div class="svc-foot"><div><small>от</small><b>120 руб./п.м</b></div><button class="btn btn-sm" data-open-modal data-service="Герметизация межпанельных швов">Заказать</button></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="sec sec-sand">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <p class="eyebrow"><span></span> Как мы работаем</p>
+      <h2 class="h2">Пять шагов <em>до готового фасада</em></h2>
+    </div>
+    <div class="steps">
+      <i class="steps-line" aria-hidden="true"></i>
+      <div class="step" data-reveal><b>1</b><h3>Заявка</h3><p>Звоните или оставьте заявку на сайте.</p></div>
+      <div class="step" data-reveal><b>2</b><h3>Бесплатный замер</h3><p>Специалист приедет и осмотрит объект.</p></div>
+      <div class="step" data-reveal><b>3</b><h3>Смета и договор</h3><p>Фиксируем цену, сроки и материалы.</p></div>
+      <div class="step" data-reveal><b>4</b><h3>Работа под ключ</h3><p>Свои леса и оборудование, без скрытых наценок.</p></div>
+      <div class="step" data-reveal><b>5</b><h3>Сдача и гарантия</h3><p>Акт приёмки и гарантия по договору.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section id="before-after" class="sec sec-dark">
+  <div class="wrap-s">
+    <div class="sec-head center" data-reveal>
+      <p class="eyebrow"><span></span> До / После</p>
+      <h2 class="h2">Разница видна <em>с первого взгляда</em></h2>
+      <p class="sub">Потяните ползунок: слева фасад с сыростью и обвалившейся штукатуркой, справа — после наших работ.</p>
+    </div>
+    <div class="ba" id="ba" data-reveal>
+      <figure class="photo ba-layer" data-label="Фото ПОСЛЕ" data-tone="after"><img src="images/ba-after.jpg" data-fallback="https://images.unsplash.com/photo-1705258814344-47bd74ce6998?auto=format&fit=crop&w=1600&q=80" alt="Фасад после работ" loading="lazy"></figure>
+      <figure class="photo ba-layer ba-top" id="baTop" data-label="Фото ДО" data-tone="before"><img src="images/ba-before.jpg" data-fallback="https://images.unsplash.com/photo-1740235088915-6f6c7d75c0be?auto=format&fit=crop&w=1600&q=80" alt="Фасад до работ" loading="lazy"></figure>
+      <span class="ba-tag t-before">До</span><span class="ba-tag t-after">После</span>
+      <div class="ba-line" id="baLine"><span><i class="fa-solid fa-arrows-left-right"></i></span></div>
+      <input id="baRange" class="ba-range" type="range" min="0" max="100" value="50" aria-label="Сравнить фасад до и после">
+    </div>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section id="works" class="sec">
+  <div class="wrap">
+    <div class="sec-head row" data-reveal>
+      <div>
+        <p class="eyebrow"><span></span> Наши работы</p>
+        <h2 class="h2">Дома, которые <em>мы преобразили</em></h2>
+      </div>
+      <div class="sw-nav"><button class="sw-prev" aria-label="Назад"><i class="fa-solid fa-arrow-left"></i></button><button class="sw-next" aria-label="Вперёд"><i class="fa-solid fa-arrow-right"></i></button></div>
+    </div>
+  </div>
+  <div class="works swiper" data-reveal>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><figure class="photo work" data-label="Объект 1"><img src="images/w1.jpg" data-fallback="https://images.unsplash.com/photo-1690122254245-f85d6e738705?auto=format&fit=crop&w=1600&q=80" style="object-position:15% 50%" alt="Выполненная работа 1" loading="lazy"><figcaption>Утепление частного дома</figcaption></figure></div>
+      <div class="swiper-slide"><figure class="photo work" data-label="Объект 2"><img src="images/w2.jpg" data-fallback="https://images.pexels.com/photos/33647268/pexels-photo-33647268.jpeg?auto=compress&cs=tinysrgb&w=1600" style="object-position:50% 50%" alt="Выполненная работа 2" loading="lazy"><figcaption>Декоративная штукатурка</figcaption></figure></div>
+      <div class="swiper-slide"><figure class="photo work" data-label="Объект 3"><img src="images/w3.jpg" data-fallback="https://images.pexels.com/photos/37753214/pexels-photo-37753214.jpeg?auto=compress&cs=tinysrgb&w=1600" style="object-position:50% 50%" alt="Выполненная работа 3" loading="lazy"><figcaption>Герметизация швов</figcaption></figure></div>
+      <div class="swiper-slide"><figure class="photo work" data-label="Объект 4"><img src="images/w4.jpg" data-fallback="https://images.unsplash.com/photo-1740235088915-6f6c7d75c0be?auto=format&fit=crop&w=1600&q=80" style="object-position:70% 15%" alt="Выполненная работа 4" loading="lazy"><figcaption>Реставрация фасада</figcaption></figure></div>
+      <div class="swiper-slide"><figure class="photo work" data-label="Объект 5"><img src="images/w5.jpg" data-fallback="https://images.unsplash.com/photo-1705258814344-47bd74ce6998?auto=format&fit=crop&w=1600&q=80" style="object-position:20% 70%" alt="Выполненная работа 5" loading="lazy"><figcaption>Покраска фасада</figcaption></figure></div>
+      <div class="swiper-slide"><figure class="photo work" data-label="Объект 6"><img src="images/w6.jpg" data-fallback="https://images.pexels.com/photos/3605420/pexels-photo-3605420.jpeg?auto=compress&cs=tinysrgb&w=1600" style="object-position:50% 50%" alt="Выполненная работа 6" loading="lazy"><figcaption>Защита от сырости</figcaption></figure></div>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section id="calculator" class="sec sec-sand">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <p class="eyebrow"><span></span> Калькулятор</p>
+      <h2 class="h2">Узнайте цену <em>за минуту</em></h2>
+      <p class="sub">Это ориентировочная стоимость. Точную смету составим после бесплатного замера.</p>
+    </div>
+    <div class="calc" data-reveal>
+      <div class="calc-form">
+        <div><span class="label">Тип объекта</span>
+          <div class="seg" role="radiogroup" aria-label="Тип объекта">
+            <label><input type="radio" name="object" value="apartment" checked><span><i class="fa-solid fa-building"></i> Квартира</span></label>
+            <label><input type="radio" name="object" value="house"><span><i class="fa-solid fa-house"></i> Частный дом</span></label>
+          </div></div>
+        <div><label class="label" for="service">Услуга</label>
+          <select id="service" class="field">
+            <option value="foam">Утепление пенопластом</option><option value="wool">Утепление минватой</option>
+            <option value="damp">Устранение сырости и плесени</option><option value="plaster">Декоративная штукатурка / короед</option>
+            <option value="paint">Реставрация и покраска фасада</option><option value="seams">Герметизация швов (п.м)</option>
+          </select></div>
+        <div>
+          <div class="flex justify-between items-end"><label class="label" for="area" id="areaLabel">Площадь, м²</label><output id="areaOut" class="area-out">60 м²</output></div>
+          <input id="area" type="range" min="10" max="500" step="5" value="60" class="range">
+          <div class="range-ends"><span>10</span><span>500</span></div>
+        </div>
+      </div>
+      <div class="calc-result">
+        <p class="small-cap">Примерная стоимость работ</p>
+        <div id="priceOut" class="price-out">—</div>
+        <p id="priceNote" class="price-note"></p>
+        <form id="estimateForm" class="est-form" novalidate>
+          <p class="est-title">Получить точную смету</p>
+          <input class="field-dark" type="text" name="name" placeholder="Ваше имя" autocomplete="name" required>
+          <input class="field-dark" type="tel" name="phone" placeholder="+373 ___ __ ___" autocomplete="tel" required>
+          <button type="submit" class="btn btn-block">Получить смету <i class="fa-solid fa-arrow-right"></i></button>
+          <p class="form-msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEES -->
+<section id="guarantees" class="sec">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <p class="eyebrow"><span></span> Гарантии</p>
+      <h2 class="h2">Почему нам <em>доверяют</em></h2>
+      <p class="sub">Всё фиксируем на бумаге: цену, сроки, материалы и гарантию.</p>
+    </div>
+    <div class="trust-grid">
+      <div class="trust" data-reveal><i class="fa-solid fa-file-contract"></i><h3>Официальный договор</h3><p>Работаем по договору с гарантийными обязательствами и актом приёмки.</p></div>
+      <div class="trust" data-reveal><i class="fa-solid fa-lock"></i><h3>Фиксированная смета</h3><p>Цена не вырастет по ходу работ. Никаких скрытых наценок.</p></div>
+      <div class="trust" data-reveal><i class="fa-solid fa-medal"></i><h3>Качественные материалы</h3><p>Используем проверенные системы утепления, грунты и штукатурки.</p></div>
+      <div class="trust" data-reveal><i class="fa-solid fa-screwdriver-wrench"></i><h3>Свои леса и оборудование</h3><p>Не арендуем и не ждём: выходим на объект в оговорённый день.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="wrap cta-in" data-reveal>
+    <h2>Нужен замер? <em>Приедем бесплатно.</em></h2>
+    <p>Осмотрим фасад, подскажем решение и назовём точную цену.</p>
+    <button class="btn btn-light btn-lg" data-open-modal data-magnetic><i class="fa-solid fa-phone-volume"></i> Вызвать замерщика</button>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer id="contacts" class="footer">
+  <div class="wrap foot-grid">
+    <div>
+      <a href="#top" class="logo logo-light" data-scroll><span class="logo-mark"><i class="fa-solid fa-house-chimney"></i></span><span>Дом<em>Сервис</em></span></a>
+      <p class="foot-p">Утепление, реставрация и отделка фасадов в Приднестровье. Официальный договор и гарантия на работы.</p>
+      <p class="foot-p dim">domservis.pmr</p>
+    </div>
+    <div>
+      <h3>Контакты</h3>
+      <ul class="contacts">
+        <li><a href="tel:+37377700000"><i class="fa-solid fa-phone"></i>+373 777 20 072</a></li>
+        <li><a href="viber://chat?number=%2B37377720072"><i class="fa-brands fa-viber"></i>Viber</a></li>
+        <li><a href="https://www.instagram.com/domservis.pmr" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+        <li><span><i class="fa-regular fa-clock"></i>Пн–Пт, 8:00–19:00</span></li>
+      </ul>
+      <h3 class="mt">Зона выезда</h3>
+      <p class="foot-p">Тирасполь, Бендеры, Слободзея, Григориополь.</p>
+    </div>
+    <div class="map-wrap"><iframe title="Карта: Тирасполь" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Тирасполь&amp;output=embed"></iframe></div>
+  </div>
+  <div class="copy">© <span id="year">2026</span> ДомСервис. Все права защищены.</div>
+</footer>
+
+<!-- MODAL -->
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+  <div class="modal-bg" data-close-modal></div>
+  <div class="modal-box">
+    <button class="modal-x" data-close-modal aria-label="Закрыть"><i class="fa-solid fa-xmark"></i></button>
+    <div class="m-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+    <h2 id="modalTitle">Вызов замерщика на объект</h2>
+    <p id="modalService" class="m-service"></p>
+    <form id="measureForm" novalidate>
+      <div><label class="label" for="m-name">Имя</label><input id="m-name" name="name" class="field" type="text" autocomplete="name" required></div>
+      <div><label class="label" for="m-phone">Телефон</label><input id="m-phone" name="phone" class="field" type="tel" placeholder="+373 ___ __ ___" autocomplete="tel" required></div>
+      <div><label class="label" for="m-address">Адрес / Город</label><input id="m-address" name="address" class="field" type="text" autocomplete="street-address" required></div>
+      <div><label class="label" for="m-date">Удобная дата</label><input id="m-date" name="date" class="field" type="date"></div>
+      <button type="submit" class="btn btn-block">Вызвать замерщика <i class="fa-solid fa-arrow-right"></i></button>
+      <p class="form-msg" aria-live="polite"></p>
+      <p class="m-note">Замер и консультация — 0 руб. Ни к чему вас не обязывает.</p>
+    </form>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
